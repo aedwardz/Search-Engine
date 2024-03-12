@@ -125,6 +125,9 @@ def merge(num:int):
             stats.indexDict.update(indexData)
 
 def mergeTifidf(num:int):
+    """
+    Merges the indexed files into the dictionary that holds values of tfidf
+    """
     for i in range(num):
         with open(f"index_w_tfidf_{i+1}.pkl", "rb") as file:
             indexData = pickle.load(file)

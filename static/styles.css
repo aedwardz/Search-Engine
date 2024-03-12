@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Bahnschrift;
+
+}
+html{
+    scroll-behavior:smooth;
+}
+
+body {
+
+}
+
+.title{
+    text-align: center;
+    padding-top: 60px;
+}
+
+.search-box{
+    text-align: center;
+    padding-top: 60px;
+}
+
+input[type=text]{
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 18px;
+    width: 600px;
+    border-radius: 12px;
+}
+
+.search-button{
+    padding: 13px;
+    border-radius: 12px;
+    cursor: pointer;
+    background: rgba(112, 128, 144, 0.84);
+}
+
+.search-button:hover{
+    color: white;
+}
+
+.urls{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.urls li{
+    padding-top: 15px;
+}
+
+.urls ul{
+    padding-bottom: 20px;
+}

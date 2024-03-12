@@ -1,0 +1,32 @@
+~Queries~
+
+Poor Performance:
+computer
+uci
+information
+ics
+course
+university
+or
+the
+software
+this
+
+
+
+Good Performance:
+cs
+cristina lopes
+machine learning
+ACM
+master of software engineering
+uc irvine
+test
+school
+school of information
+computer science
+
+
+Comments: 
+The search query computer took very long to run so to make it perform better, we changed the way we accessed the text in each file by using libraries and list comprehensions. 
+We also changed the way we searched for each query's token.

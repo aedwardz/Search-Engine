@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Home</title>
+</head>
+<body>
+    <div>
+        <h1 class="title">UCI Information Retrieval Assignment 3</h1>
+
+        <form action="{{ url_for('search') }}" method="GET" class="search-box">
+            <input type="text" name="query" placeholder="Search...">
+            <button type="submit" class="search-button">Search</button>
+        </form>
+
+         <div class="urls">
+             <h2>{{ search }}</h2>
+            <ul>
+                {% for url in urls %}
+                    <li><a href="{{ url[0] }}" target="_blank">{{ url[0] }}</a></li>
+                {% endfor %}
+            </ul>
+             <div>Total hits: {{ hits }}</div>
+        </div>
+    </div>
+
+</body>
+</html>
